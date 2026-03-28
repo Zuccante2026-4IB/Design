@@ -8,6 +8,7 @@
     background-image: url("../img/bglight.jpg");
     background-size: cover;
     margin: 0;
+    overflow-x: hidden;
 }
 
 header {
@@ -19,8 +20,8 @@ header {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     align-self: center;
-    width: 90%;
-    padding: 6px;
+    width: 96%;
+    padding: 12px;
     opacity: 0.9;
 }
 
@@ -35,6 +36,11 @@ header div {
 .headswitch {
     text-align: right;
 }
+
+.toggle-label {
+    display: inline-block;
+}
+
 .chatbot_space {
     background-color: #edf2f4;
     border-radius: 25px;
@@ -62,7 +68,7 @@ header div {
     outline: none;
 }
 
-.chatbot_space input[type="text"]::placeholder {
+.chatbot_space input[type="text"]::placeholder  {
     color: #6d6d6d;
 }
 
@@ -101,4 +107,95 @@ header div {
 
 .navlist li a:hover {
     color: #080808;
+}
+
+footer {
+    font-weight: bold;
+    color: #282828;
+    position: absolute;
+    left: 0;
+    bottom: 0
+}
+
+.toggle-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.toggle-slot {
+  font-size: 10px;
+  position: relative;
+  height: 3.5em;
+  width: 7em;
+  border-radius: 10em;
+  background-color: white;
+  transition: background-color 250ms;
+}
+
+.toggle-checkbox:checked ~ .toggle-slot {
+  background-color: #374151;
+}
+
+.toggle-button {
+  transform: translate(0.3em, 0em);
+  position: absolute;
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  background-color: #ffeccf;
+  box-shadow: inset 0px 0px 0px 0.75em #ffbb52;
+  transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .toggle-button {
+  background-color: #485367;
+  box-shadow: inset 0px 0px 0px 0.75em white;
+  transform: translate(3.65em, 0em);
+}
+
+.sun-icon {
+  position: absolute;
+  height: 6em;
+  width: 6em;
+  color: #ffbb52;
+}
+
+.sun-icon-wrapper {
+  position: absolute;
+  height: 6em;
+  width: 6em;
+  opacity: 1;
+  transform: translate(2em, 2em) rotate(15deg);
+  transform-origin: 50% 50%;
+  transition: opacity 150ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper {
+  opacity: 0;
+  transform: translate(3em, 2em) rotate(0deg);
+}
+
+.moon-icon {
+  position: absolute;
+  height: 6em;
+  width: 6em;
+  color: white;
+}
+
+.moon-icon-wrapper {
+  position: absolute;
+  height: 6em;
+  width: 6em;
+  opacity: 0;
+  transform: translate(11em, 2em) rotate(0deg);
+  transform-origin: 50% 50%;
+  transition: opacity 150ms, transform 500ms cubic-bezier(.26,2.5,.46,.71);
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper {
+  opacity: 1;
+  transform: translate(2em, 2em) rotate(-15deg);
 }
