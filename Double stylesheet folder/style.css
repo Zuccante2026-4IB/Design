@@ -10,7 +10,6 @@
     margin: 0;
 }
 
-
 header {
     font-size: 16px;
     background-color: #edf2f4;
@@ -36,23 +35,43 @@ header div {
 .headswitch {
     text-align: right;
 }
-
 .chatbot_space {
     background-color: #edf2f4;
-    border-radius: 20px;
-    height: 120px;
-    display: flex;
+    border-radius: 25px;
+    height: 110px; 
+    display: flex; 
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    bottom: 0;      
+    width: 45%;           
     position: absolute;
-    bottom: 0;
-    width: 30%;
     margin: 1%;
+    gap: 3%;
 }
 
-.chatbot_space div {
-    display: flex;
-    align-items: center;
+.chatbot_space input[type="text"] {
+    width: 55%;           
+    height: 50%;          
+    border-radius: 25px;
+    border: none;
+    padding: 0 4%;
+    font-size: 18px;
+    background-color: #ffffff;
+    color: #282828;
+    outline: none;
+}
+
+.chatbot_space input[type="text"]::placeholder {
+    color: #6d6d6d;
+}
+
+.voice_input {  
+    width: 10%; 
+    height: 50%;   
+    border-radius: 25px;
+    border: none;
+    background: #dcdcdc;
 }
 
 .navlist {
@@ -63,13 +82,11 @@ header div {
     overflow: hidden;
     display: flex;
     flex-direction: row;
-
 }
 
 .navlist li {
     float: left;
 }
-
 
 .navlist li a {
     color: #282828;
