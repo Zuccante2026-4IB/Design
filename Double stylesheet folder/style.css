@@ -14,8 +14,8 @@
 header {
     font-size: 16px;
     background-color: #edf2f4;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -25,14 +25,16 @@ header {
     opacity: 0.9;
 }
 
-header div{
+header div {
     margin: 6px;
-    text-align: center;
 }
 
-.title_text {
-    color: #2b2d42;
-    font-weight: bold;
+.headtitle {
+    text-align: left;
+}
+
+.headswitch {
+    text-align: right;
 }
 
 .chatbot_space {
@@ -42,11 +44,10 @@ header div{
     display: flex;
     flex-direction: row;
     align-items: center;
-    align-items: center;
     position: absolute;
     bottom: 0;
     width: 30%;
-    margin: 1%; 
+    margin: 1%;
 }
 
 .chatbot_space div {
@@ -54,25 +55,33 @@ header div{
     align-items: center;
 }
 
- .navlist{
-    list-style-type: none ;
+.navlist {
+    text-align: center;
+    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     display: flex;
     flex-direction: row;
- }
 
- .navlist li{
+}
+
+.navlist li {
     float: left;
- }
+}
 
- .navlist li a{
+
+.navlist li a {
     color: #282828;
     text-decoration: none;
- }
+    border-right: 1px #282828 solid;
+    padding: 0 14px;
+}
 
- .navlist li a:hover{
+.navlist li a:last-child {
+    border-right: none;
+}
+
+.navlist li a:hover {
     color: #080808;
- }
-
+}
