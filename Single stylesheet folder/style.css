@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+body{
+    background-image: url('../img/Blurred images/pexels-philipp-brugger-3521357-5262651.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'Sora', sans-serif;
+}
+
+/*homepage*/
+.main{
+    width: 100%;
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.maincontent{
+    width: 90%;
+    height: 90vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    backdrop-filter: blur(40px);
+    margin: 60px;
+}
+
+.maincontent header{
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-inline: 20px;
+    align-items: center;
+    font-size: 120%;
+    align-self: center;
+}
+
+.maincontent header nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: #f5f5f5;
+    list-style-type: none;
+}
+
+.maincontent header nav a{
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+.homepagetextarea{
+    padding: 20px;
+}
+
+.maincontent .title{
+    font-size: 200%;
+    font-weight: 600;
+    color: #f5f5f5;
+}
+
+/* parte chat */
+
+.chat_container {
+    width: 100%;
+    max-width: 600px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px #000000;
+    overflow: hidden;
+}
+
+.messaging_area {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    gap: 15px; 
+}
+
+.user_message {
+    align-self: flex-end;
+    background-color: #f5f4f3;
+    color: #282828;
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 70%;
+}
+
+.ai_message {
+    align-self: flex-start;
+    background-color: #f5f4f3;
+    color: #282828;
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 70%;
+}
+
+.input_area {
+    display: flex;
+    padding: 10px;
+    cursor: text;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background-image: url('../img/Blurred images/pexels-marcelo-aut-145487862-36810893.jpg');
+        color: #f5f5f5;
+    }
+    .maincontent{
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .maincontent header{
+        background-color: rgba(0, 8, 20, 0.7);
+    }
+
+    .user_message {
+        background-color: #282828;
+        color: #f5f5f5;
+    }
+
+    .ai_message {
+        background-color: #282828;
+        color: #f5f5f5;
+    }
+}
