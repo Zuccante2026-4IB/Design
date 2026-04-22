@@ -85,20 +85,15 @@ body{
 
 .user_message {
     align-self: flex-end;
+}
+
+.message{
     background-color: #f5f4f3;
-    color: #282828;
-    padding: 10px 15px;
-    border-radius: 20px;
-    max-width: 70%;
+    border-radius: 10px;
 }
 
 .ai_message {
     align-self: flex-start;
-    background-color: #f5f4f3;
-    color: #282828;
-    padding: 10px 15px;
-    border-radius: 20px;
-    max-width: 70%;
 }
 
 .input_area {
