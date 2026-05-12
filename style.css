@@ -6,24 +6,24 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  display: none;
+    display: none;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(194, 194, 194, 0.3);
-  border-radius: 99px;
-  transition: all 0.15s;
+    background: rgba(194, 194, 194, 0.3);
+    border-radius: 99px;
+    transition: all 0.15s;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #919191;
+    background: #919191;
 }
 
 /*HomePage*/
@@ -37,8 +37,8 @@ body {
 }
 
 #HomePage .welcome-section {
-    background-color: rgba(255,255,255, 0.22);
-    border: 1px solid rgba(255,255,255, 0.32);
+    background-color: rgba(255, 255, 255, 0.22);
+    border: 1px solid rgba(255, 255, 255, 0.32);
     border-radius: 20px;
     max-width: 720px;
     max-height: 1200px;
@@ -570,7 +570,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     margin-bottom: 20px;
-    overflow-y: auto ;
+    overflow-y: auto;
 }
 
 #PaginaChat .messagerow-ai {
@@ -610,9 +610,333 @@ body {
     max-width: 450px;
 }
 
-#PaginaChat .messagerow-user img{
+#PaginaChat .messagerow-user img {
     width: 40px;
     height: 40px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+#PaginaLogin {
+    min-height: 100vh;
+    background: linear-gradient(160deg, rgba(10, 24, 42, 0.87) 0%, rgba(10, 24, 42, 0.72) 100%),
+        url('img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+#PaginaLogin nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+#PaginaLogin nav a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
+}
+
+#PaginaLogin nav a:hover {
+    color: #733cf5;
+}
+
+#PaginaLogin nav a:visited {
+    color: #f5f5f5;
+}
+
+#PaginaLogin nav .OtherLinks {
+    display: flex;
+    gap: 16px;
+}
+
+#PaginaLogin nav .dot {
+    height: 10px;
+    width: 10px;
+    background-color: #733cf5;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+#PaginaLogin nav span {
+    font-size: 18px;
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+#PaginaLogin .navText {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#PaginaLogin .Login-container {
+    background-color: rgba(255, 255, 255, 0.22);
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    max-width: 350px;
+    padding: 40px 50px;
+    color: #f5f5f5;
+    margin: 0 auto;
+}
+
+#PaginaLogin .login-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#PaginaLogin .data-field {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#PaginaLogin .input-field {
+    padding: 12px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 16px;
+}
+
+#PaginaLogin .input-button {
+    background: #733cf5;
+    color: #ffffff;
+    border-radius: 99px;
+    padding: 12px 26px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.15s;
+}
+
+#PaginaLogin .input-button:hover {
+    background: #5b2ac7;
+}
+
+#PaginaLogin .link {
+    color: #733cf5;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#PaginaLogin .link:hover {
+    text-decoration: underline;
+}
+
+#PaginaLogin .radio-container {
+    display: flex;
+    gap: 16px;
+    margin: 12px 0;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#PaginaLogin .radio-container label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0px 20px;
+    width: 220px;
+    cursor: pointer;
+    height: 50px;
+    position: relative;
+}
+
+#PaginaLogin .radio-container label:hover {
+    color: #733cf5;
+}
+
+#PaginaLogin .radio-container input[type="radio"] {
+    margin-right: 6px;
+}
+
+/*Fine pagina login*/
+
+/*Pagina evento singolo*/
+#EventoSingolo {
+    min-height: 100vh;
+    background: linear-gradient(160deg, rgba(10, 24, 42, 0.87) 0%, rgba(10, 24, 42, 0.72) 100%),
+        url('img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+#EventoSingolo nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+#EventoSingolo nav a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
+}
+
+#EventoSingolo nav a:hover {
+    color: #733cf5;
+}
+
+#EventoSingolo nav a:visited {
+    color: #f5f5f5;
+}
+
+#EventoSingolo nav .OtherLinks {
+    display: flex;
+    gap: 16px;
+}
+
+#EventoSingolo nav .dot {
+    height: 10px;
+    width: 10px;
+    background-color: #733cf5;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+#EventoSingolo nav span {
+    font-size: 18px;
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+#EventoSingolo .navText {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#EventoSingolo .login {
+    background: #733cf5;
+    color: #ffffff;
+    border-radius: 99px;
+    padding: 6px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.15s;
+}
+
+#EventoSingolo .Event{
+    background-color: rgba(255, 255, 255, 0.17);
+    border: 1px solid rgba(255, 255, 255, 0.21);
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 16px;
+    color: #f5f5f5;
+    transition: all 0.15s;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+#EventoSingolo .Event img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#EventoSingolo .ev-filter-list {
+    display: flex;
+    gap: 8px;
+}
+
+#EventoSingolo .ev-filter {
+    display: inline-block;
+    width: fit-content;
+    padding: 3px 11px;
+    border-radius: 99px;
+    font-size: 11px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    border: 1px solid;
+}
+
+#EventoSingolo .ev-content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#EventoSingolo .ev-title {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+#EventoSingolo .ev-date-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 4px;
+    
+}
+
+#EventoSingolo .ev-date {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#EventoSingolo .ev-month {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#EventoSingolo .ev-time {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#EventoSingolo .ev-location {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+}
+
+#EventoSingolo .ev-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#EventoSingolo .ev-price {
+    font-size: 16px;
+    font-weight: 500;
+    color: #733cf5;
+}
+
+#EventoSingolo .ev-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+#EventoSingolo .ev-footer button {
+    background: #733cf5;
+    color: #ffffff;
+    border-radius: 99px;
+    padding: 12px 26px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.15s;
+}
+
+#EventoSingolo .ev-footer button:hover {
+    background: #5b2ac7;
 }
