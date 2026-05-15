@@ -1,983 +1,14 @@
+/*stile*/
 body {
     margin: 0;
-    padding: 0;
     font-family: 'DM Sans', system-ui, sans-serif;
-    overflow-x: hidden;
+    color: #f5f5f5;
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    display: none;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgba(194, 194, 194, 0.3);
-    border-radius: 99px;
-    transition: all 0.15s;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #919191;
-}
-
-/*HomePage*/
-#HomePage {
+#PaginaPlugin {
     min-height: 100vh;
     background: linear-gradient(160deg, rgba(10, 24, 42, 0.87) 0%, rgba(10, 24, 42, 0.72) 100%),
-        url('assets/background.jpg');
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-}
-
-#HomePage .welcome-section {
-    background-color: rgba(255, 255, 255, 0.22);
-    border: 1px solid rgba(255, 255, 255, 0.32);
-    border-radius: 20px;
-    max-width: 720px;
-    max-height: 1200px;
-    margin: 0px auto;
-    padding: 40px 50px 40px 65px;
-    color: #f5f5f5;
-}
-
-
-
-#HomePage .welcome-title {
-    font-size: 40px;
-    font-weight: 300;
-    margin-bottom: 8px;
-}
-
-#HomePage .welcome-subtitle {
-    font-size: 14px;
-    font-weight: 500;
-    color: #733cf5;
-    margin-bottom: 10px;
-}
-
-#HomePage .welcome-title {
-    font-size: 40px;
-    font-weight: 300;
-    margin-bottom: 12px;
-}
-
-#HomePage .welcome-text {
-    font-size: 16px;
-    font-weight: 400;
-    opacity: 0.9;
-    margin-bottom: 40px;
-
-}
-
-#HomePage .btn-primary {
-    background: #733cf5;
-    color: #ffffff;
-    border-radius: 99px;
-    padding: 12px 26px;
-    border: none;
-    font-size: 15px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: 0.15s;
-}
-
-#HomePage .btn-primary:hover {
-    background: #5b2ac7;
-}
-
-#HomePage .btn-primary:active {
-    background: #4a1e8c;
-}
-
-#HomePage .btn-secondary {
-    background: transparent;
-    color: #f5f5f5;
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    border-radius: 99px;
-    padding: 12px 26px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-#HomePage .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.12);
-}
-
-#HomePage .btn-secondary:active {
-    background: rgba(255, 255, 255, 0.2);
-}
-
-#HomePage .titlearea {
-    padding: 16px 28px 22px;
-    max-width: 720px;
-    margin: 0 auto;
-    color: #f5f5f5;
-}
-
-#HomePage .titlearea-title {
-    font-size: 40px;
-    font-weight: 300;
-    margin-bottom: 8px;
-}
-
-#HomePage .titlearea-subtitle {
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 4px;
-}
-
-#HomePage .titlearea-events {
-    font-size: 14px;
-    font-weight: 400;
-    color: #f5f5f5;
-}
-
-#HomePage .titlearea-events-number {
-    font-weight: 500;
-    color: #733cf5;
-}
-
-#HomePage nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    max-width: 720px;
-    margin: 0 auto;
-}
-
-#HomePage nav a {
-    text-decoration: none;
-    color: #f5f5f5;
-    font-size: 18px;
-}
-
-#HomePage nav a:hover {
-    color: #733cf5;
-}
-
-#HomePage nav a:visited {
-    color: #f5f5f5;
-}
-
-#HomePage nav .OtherLinks {
-    display: flex;
-    gap: 16px;
-}
-
-#HomePage nav .dot {
-    height: 10px;
-    width: 10px;
-    background-color: #733cf5;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 8px;
-}
-
-#HomePage nav span {
-    font-size: 18px;
-    color: #f5f5f5;
-    text-decoration: none;
-}
-
-#HomePage .navText {
-    font-size: 15px;
-    font-weight: 500;
-}
-
-#HomePage .login {
-    background: #733cf5;
-    color: #ffffff;
-    border-radius: 99px;
-    padding: 6px 16px;
-    font-size: 13px;
-    font-weight: 500;
-    transition: 0.15s;
-}
-
-/*Fine HomePage*/
-
-/*Pagina eventi*/
-#PaginaEventi {
-    min-height: 100vh;
-    background: linear-gradient(160deg, rgba(10, 24, 42, 0.87) 0%, rgba(10, 24, 42, 0.72) 100%),
-        url('assets/background.jpg');
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-}
-
-#PaginaEventi nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    max-width: 720px;
-    margin: 0 auto;
-}
-
-#PaginaEventi nav a {
-    text-decoration: none;
-    color: #f5f5f5;
-    font-size: 18px;
-}
-
-#PaginaEventi nav a:hover {
-    color: #733cf5;
-}
-
-#PaginaEventi nav a:visited {
-    color: #f5f5f5;
-}
-
-#PaginaEventi nav .OtherLinks {
-    display: flex;
-    gap: 16px;
-}
-
-#PaginaEventi .login {
-    background: #733cf5;
-    color: #ffffff;
-    border-radius: 99px;
-    padding: 6px 16px;
-    font-size: 13px;
-    font-weight: 500;
-    transition: 0.15s;
-}
-
-#PaginaEventi nav .dot {
-    height: 10px;
-    width: 10px;
-    background-color: #733cf5;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 8px;
-}
-
-#PaginaEventi nav span {
-    font-size: 18px;
-    color: #f5f5f5;
-    text-decoration: none;
-}
-
-#PaginaEventi .navText {
-    font-size: 15px;
-    font-weight: 500;
-}
-
-#PaginaEventi .titlearea {
-    padding: 16px 28px 22px;
-    max-width: 720px;
-    margin: 0 auto;
-    color: #f5f5f5;
-}
-
-#PaginaEventi .titlearea-title {
-    font-size: 40px;
-    font-weight: 300;
-    margin-bottom: 8px;
-}
-
-#PaginaEventi .titlearea-subtitle {
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 4px;
-}
-
-#PaginaEventi .titlearea-events {
-    font-size: 14px;
-    font-weight: 400;
-    color: #f5f5f5;
-}
-
-#PaginaEventi .titlearea-events-number {
-    font-weight: 500;
-    color: #733cf5;
-}
-
-#PaginaEventi .imputarea {
-    padding-inline: 16px 16px;
-    margin-bottom: 20px;
-    max-width: 720px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-start;
-}
-
-#PaginaEventi input[type="text"] {
-    flex: 1;
-    max-width: 700px;
-    width: 50%;
-    margin: 0 auto;
-    display: block;
-    padding: 12px 16px;
-    font-size: 16px;
-    border: none;
-    border-radius: 16px;
-    margin-bottom: 20px;
-}
-
-#PaginaEventi .Filters {
-    display: flex;
-    gap: 16px;
-    max-width: 720px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    padding-inline: 16px 16px;
-    overflow-x: auto;
-    scrollbar-width: none;
-}
-
-#PaginaEventi .Filters .filter {
-    padding: 7px 17px;
-    border-radius: 99px;
-    white-space: nowrap;
-    font-size: 13px;
-    cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.24);
-    background: rgba(255, 255, 255, 0.16);
-    color: rgba(255, 255, 255, 0.6);
-    transition: all 0.15s;
-}
-
-#PaginaEventi .Filters .filter:hover {
-    background: rgba(255, 255, 255, 0.34);
-    color: #f5f5f5;
-    border-color: rgba(255, 255, 255, 0.45);
-}
-
-#PaginaEventi .f-blue {
-    background: rgba(174, 158, 255, 0.38);
-    color: #6db8ff;
-    border-color: rgba(74, 158, 255, 0.5);
-}
-
-#PaginaEventi .f-green {
-    background: rgba(115, 245, 60, 0.38);
-    color: #73f53c;
-    border-color: rgba(115, 245, 60, 0.5);
-}
-
-#PaginaEventi .f-purple {
-    background: rgba(115, 60, 245, 0.38);
-    color: #733cf5;
-    border-color: rgba(115, 60, 245, 0.5);
-}
-
-#PaginaEventi .f-amber {
-    background: rgba(245, 171, 60, 0.38);
-    color: #f5ab3c;
-    border-color: rgba(245, 171, 60, 0.5);
-}
-
-#PaginaEventi .Filters .filter.active {
-    background: #733cf5;
-    color: #f5f5f5;
-    border-color: #733cf5;
-}
-
-#PaginaEventi .Events {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    max-width: 720px;
-    margin: 0 auto;
-    padding-inline: 16px 16px;
-}
-
-#PaginaEventi .Event {
-    background-color: rgba(255, 255, 255, 0.17);
-    border: 1px solid rgba(255, 255, 255, 0.21);
-    padding: 16px 20px;
-    display: flex;
-    gap: 16px;
-    border-radius: 16px;
-    color: #f5f5f5;
-    transition: all 0.15s;
-}
-
-#PaginaEventi .Event img {
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
-    border-radius: 8px;
-    align-self: flex-end;
-}
-
-#PaginaEventi .ev-body {
-    gap: 4px;
-    flex: 1;
-}
-
-#PaginaEventi .ev-date {
-    font-size: 24px;
-    font-weight: 500;
-}
-
-#PaginaEventi .ev-month {
-    font-size: 14px;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-#PaginaEventi .ev-category {
-    display: inline-block;
-    padding: 3px 11px;
-    border-radius: 99px;
-    font-size: 11px;
-    font-weight: 500;
-    margin-bottom: 6px;
-    border: 1px solid;
-}
-
-#PaginaEventi .ev-title {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 4px;
-}
-
-#PaginaEventi .ev-description {
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 4px;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-#PaginaEventi .ev-location {
-    font-size: 12px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-#PaginaEventi .Event:hover {
-    background-color: rgba(255, 255, 255, 0.12);
-    border-color: rgba(255, 255, 255, 0.18);
-}
-
-/*Fine Pagina eventi*/
-
-/*Pagina Chat*/
-#PaginaChat {
-    min-height: 100vh;
-    background: linear-gradient(160deg, rgba(10, 24, 42, 0.87) 0%, rgba(10, 24, 42, 0.72) 100%),
-        url('assets/background.jpg');
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-}
-
-#PaginaChat nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    max-width: 720px;
-    margin: 0 auto;
-}
-
-#PaginaChat nav a {
-    text-decoration: none;
-    color: #f5f5f5;
-    font-size: 18px;
-}
-
-#PaginaChat nav a:hover {
-    color: #733cf5;
-}
-
-#PaginaChat nav a:visited {
-    color: #f5f5f5;
-}
-
-#PaginaChat nav .OtherLinks {
-    display: flex;
-    gap: 16px;
-}
-
-#PaginaChat nav .dot {
-    height: 10px;
-    width: 10px;
-    background-color: #733cf5;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 8px;
-}
-
-#PaginaChat nav span {
-    font-size: 18px;
-    color: #f5f5f5;
-    text-decoration: none;
-}
-
-#PaginaChat .navText {
-    font-size: 15px;
-    font-weight: 500;
-}
-
-#PaginaChat .login {
-    background: #733cf5;
-    color: #ffffff;
-    border-radius: 99px;
-    padding: 6px 16px;
-    font-size: 13px;
-    font-weight: 500;
-    transition: 0.15s;
-}
-
-#PaginaChat .inputarea {
-    padding-inline: 16px 16px;
-    max-width: 720px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-start;
-    gap: 6px;
-    position: sticky;
-    bottom: 2%;
-    height: fit-content;
-}
-
-#PaginaChat input[type="text"] {
-    flex: 1;
-    max-width: 700px;
-    width: 50%;
-    margin: 0 auto;
-    display: block;
-    padding: 12px 16px;
-    font-size: 16px;
-    border: none;
-    border-radius: 16px;
-}
-
-#PaginaChat .inputarea button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 12px;
-    width: 12px;
-    background: #733cf5;
-    color: #ffffff;
-    border-radius: 99px;
-    padding: 20px 20px;
-    border: none;
-    font-size: 15px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: 0.15s;
-    text-align: center;
-    color: #282828;
-    font-weight: 500;
-}
-
-#PaginaChat .inputarea button:hover{
-    background-color: #5b2ac7;
-}
-
-#PaginaChat .chatarea {
-    padding: 16px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    border-radius: 16px;
-    color: #f5f5f5;
-    transition: all 0.15s;
-    height: 80vh;
-    max-width: 800px;
-    margin: 0 auto;
-    overflow-y: auto;
-}
-
-#PaginaChat .messagerow-ai {
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-}
-
-#PaginaChat .messagerow-ai img {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-#PaginaChat .message-ai {
-    background-color: rgba(255, 255, 255, 0.17);
-    border: 1px solid rgba(255, 255, 255, 0.21);
-    padding: 12px 16px;
-    border-radius: 16px;
-    color: #f5f5f5;
-    max-width: 450px;
-}
-
-#PaginaChat .messagerow-user {
-    display: flex;
-    gap: 12px;
-    justify-content: flex-end;
-}
-
-#PaginaChat .message-user {
-    background-color: rgba(115, 60, 245, 0.38);
-    border: 1px solid rgba(115, 60, 245, 0.5);
-    padding: 12px 16px;
-    border-radius: 16px;
-    color: #f5f5f5;
-    max-width: 450px;
-}
-
-#PaginaChat .messagerow-user img {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-#PaginaChat .btn-p-image {
-    width: 35px;
-    height: 35px;
-    object-fit: cover;
-}
-
-/*Fine pagina Chat*/
-
-/*Inizio pagina login*/
-#PaginaLogin {
-    min-height: 100vh;
-    background: linear-gradient(160deg, rgba(10, 24, 42, 0.87) 0%, rgba(10, 24, 42, 0.72) 100%),
-        url('assets/background.jpg');
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-}
-
-#PaginaLogin nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    max-width: 720px;
-    margin: 0 auto;
-}
-
-#PaginaLogin nav a {
-    text-decoration: none;
-    color: #f5f5f5;
-    font-size: 18px;
-}
-
-#PaginaLogin nav a:hover {
-    color: #733cf5;
-}
-
-#PaginaLogin nav a:visited {
-    color: #f5f5f5;
-}
-
-#PaginaLogin nav .OtherLinks {
-    display: flex;
-    gap: 16px;
-}
-
-#PaginaLogin nav .dot {
-    height: 10px;
-    width: 10px;
-    background-color: #733cf5;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 8px;
-}
-
-#PaginaLogin nav span {
-    font-size: 18px;
-    color: #f5f5f5;
-    text-decoration: none;
-}
-
-#PaginaLogin .navText {
-    font-size: 15px;
-    font-weight: 500;
-}
-
-#PaginaLogin .Login-container {
-    background-color: rgba(255, 255, 255, 0.22);
-    border: 1px solid rgba(255, 255, 255, 0.32);
-    border-radius: 20px;
-    max-width: 350px;
-    padding: 40px 50px;
-    color: #f5f5f5;
-    margin: 0 auto;
-}
-
-#PaginaLogin .login-box {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-#PaginaLogin .data-field {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-#PaginaLogin .input-field {
-    padding: 12px 16px;
-    font-size: 16px;
-    border: none;
-    border-radius: 16px;
-}
-
-#PaginaLogin .input-button {
-    background: #733cf5;
-    color: #ffffff;
-    border-radius: 99px;
-    padding: 12px 26px;
-    border: none;
-    font-size: 15px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: 0.15s;
-}
-
-#PaginaLogin .input-button:hover {
-    background: #5b2ac7;
-}
-
-#PaginaLogin .link {
-    color: #733cf5;
-    cursor: pointer;
-    font-weight: 500;
-}
-
-#PaginaLogin .link:hover {
-    text-decoration: underline;
-}
-
-#PaginaLogin .radio-container {
-    display: flex;
-    gap: 16px;
-    margin: 12px 0;
-    height: 5vh;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-#PaginaLogin .radio-container label {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 0px 20px;
-    width: 220px;
-    cursor: pointer;
-    height: 50px;
-    position: relative;
-}
-
-#PaginaLogin .radio-container label:hover {
-    color: #733cf5;
-}
-
-#PaginaLogin .radio-container input[type="radio"] {
-    margin-right: 6px;
-}
-
-/*Fine pagina login*/
-
-/*Pagina evento singolo*/
-#EventoSingolo {
-    min-height: 100vh;
-    background: linear-gradient(160deg, rgba(10, 24, 42, 0.87) 0%, rgba(10, 24, 42, 0.72) 100%),
-        url('assets/background.jpg');
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-}
-
-#EventoSingolo nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    max-width: 720px;
-    margin: 0 auto;
-}
-
-#EventoSingolo nav a {
-    text-decoration: none;
-    color: #f5f5f5;
-    font-size: 18px;
-}
-
-#EventoSingolo nav a:hover {
-    color: #733cf5;
-}
-
-#EventoSingolo nav a:visited {
-    color: #f5f5f5;
-}
-
-#EventoSingolo nav .OtherLinks {
-    display: flex;
-    gap: 16px;
-}
-
-#EventoSingolo nav .dot {
-    height: 10px;
-    width: 10px;
-    background-color: #733cf5;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 8px;
-}
-
-#EventoSingolo nav span {
-    font-size: 18px;
-    color: #f5f5f5;
-    text-decoration: none;
-}
-
-#EventoSingolo .navText {
-    font-size: 15px;
-    font-weight: 500;
-}
-
-#EventoSingolo .login {
-    background: #733cf5;
-    color: #ffffff;
-    border-radius: 99px;
-    padding: 6px 16px;
-    font-size: 13px;
-    font-weight: 500;
-    transition: 0.15s;
-}
-
-#EventoSingolo .Event{
-    background-color: rgba(255, 255, 255, 0.17);
-    border: 1px solid rgba(255, 255, 255, 0.21);
-    padding: 16px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    border-radius: 16px;
-    color: #f5f5f5;
-    transition: all 0.15s;
-    max-width: 720px;
-    margin: 0 auto;
-}
-
-#EventoSingolo .Event img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-#EventoSingolo .ev-filter-list {
-    display: flex;
-    gap: 8px;
-}
-
-#EventoSingolo .ev-filter {
-    display: inline-block;
-    width: fit-content;
-    padding: 3px 11px;
-    border-radius: 99px;
-    font-size: 11px;
-    font-weight: 500;
-    margin-bottom: 6px;
-    border: 1px solid;
-}
-
-#EventoSingolo .ev-content-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#EventoSingolo .ev-title {
-    font-size: 28px;
-    font-weight: 500;
-}
-
-#EventoSingolo .ev-date-container {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    gap: 4px;
-    
-}
-
-#EventoSingolo .ev-date {
-    font-size: 24px;
-    font-weight: 500;
-}
-
-#EventoSingolo .ev-month {
-    font-size: 14px;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-#EventoSingolo .ev-time {
-    font-size: 14px;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-#EventoSingolo .ev-location {
-    font-size: 18px;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 1);
-}
-
-#EventoSingolo .ev-description {
-    font-size: 16px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-#EventoSingolo .ev-price {
-    font-size: 16px;
-    font-weight: 500;
-    color: #733cf5;
-}
-
-#EventoSingolo .ev-footer {
-    display: flex;
-    justify-content: flex-end;
-    gap: 12px;
-}
-
-#EventoSingolo .ev-footer button {
-    background: #733cf5;
-    color: #ffffff;
-    border-radius: 99px;
-    padding: 12px 26px;
-    border: none;
-    font-size: 15px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: 0.15s;
-}
-
-#EventoSingolo .ev-footer button:hover {
-    background: #5b2ac7;
-}
-
-/* Fine Pagina Singolo evento*/
-
-/* Inizio Pagina Plugin*/
-
-#PaginaPlugin{
-    min-height: 100vh;
-    background: linear-gradient(160deg, rgba(10, 24, 42, 0.87) 0%, rgba(10, 24, 42, 0.72) 100%),
-        url('assets/background.jpg');
+    url('background.jpg');
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -992,26 +23,32 @@ body {
     margin: 0 auto;
 }
 
-#PaginaPlugin nav a {
-    text-decoration: none;
-    color: #f5f5f5;
-    font-size: 18px;
-}
-
-#PaginaPlugin nav a:hover {
-    color: #733cf5;
-}
-
-#PaginaPlugin nav a:visited {
-    color: #f5f5f5;
-}
-
-#PaginaPlugin nav .OtherLinks {
+/*sistema spazi link*/
+#PaginaPlugin .link-nav {
     display: flex;
-    gap: 16px;
+    align-items: center;
+    gap: 20px;
 }
 
-#PaginaPlugin nav .dot {
+/*singolo link*/
+#PaginaPlugin .link-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#PaginaPlugin .btn-login {
+    background: #733cf5;
+    padding: 8px 18px;
+    border-radius: 99px;
+    transition: 0.3s;
+}
+
+#PaginaPlugin .btn-login:hover {
+    background: #5b2ac7;
+}
+
+#PaginaPlugin .punto {
     height: 10px;
     width: 10px;
     background-color: #733cf5;
@@ -1020,23 +57,189 @@ body {
     margin-right: 8px;
 }
 
-#PaginaPlugin nav span {
+/*testi*/
+#PaginaPlugin .area-titolo {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#PaginaPlugin .titolo-principale {
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0;
+}
+
+#PaginaPlugin .sottotitolo {
     font-size: 18px;
-    color: #f5f5f5;
-    text-decoration: none;
+    opacity: 0.7;
 }
 
-#PaginaPlugin .navText {
-    font-size: 15px;
-    font-weight: 500;
+/*schede plugin*/
+#PaginaPlugin .contenitore-lista {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-#PaginaPlugin .login {
-    background: #733cf5;
-    color: #ffffff;
-    border-radius: 99px;
-    padding: 6px 16px;
+#PaginaPlugin .scheda {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.08);
+    /*trasparente*/
+    backdrop-filter: blur(12px);
+    /*sfocatura*/
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+
+    /*animazione mouse-over*/
+    transition: all 0.3s ease;
+}
+
+#PaginaPlugin .scheda:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/*icone e immagini*/
+#PaginaPlugin .icona {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    flex-shrink: 0;
+    /*se volete mettere un'immagine nell'icona del plugin inseritela qui*/
+}
+
+/*icone*/
+#PaginaPlugin .verde {
+    background: #10b981;
+    color: #064e3b;
+}
+
+#PaginaPlugin .blu {
+    background: #3b82f6;
+    color: #1e3a8a;
+}
+
+#PaginaPlugin .img-plugin {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/*testo e pulsanti*/
+#PaginaPlugin .corpo-scheda {
+    flex: 1;
+}
+
+#PaginaPlugin .titolo-plugin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#PaginaPlugin .titolo-plugin h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+#PaginaPlugin .versione {
+    font-size: 12px;
+    opacity: 0.5;
+    font-weight: normal;
+}
+
+#PaginaPlugin .autore {
+    color: #733cf5;
     font-size: 13px;
-    font-weight: 500;
-    transition: 0.15s;
+    font-weight: bold;
+    display: block;
+}
+
+#PaginaPlugin .descrizione {
+    font-size: 14px;
+    opacity: 0.8;
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+/*bottoni switch ed ellimina*/
+#PaginaPlugin .comandi {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/*stile dello witch*/
+#PaginaPlugin .switch {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    display: inline-block;
+}
+
+#PaginaPlugin .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+#PaginaPlugin .cursore {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: .4s;
+    border-radius: 34px;
+}
+
+#PaginaPlugin .cursore:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+#PaginaPlugin input:checked+.cursore {
+    background-color: #733cf5;
+}
+
+#PaginaPlugin input:checked+.cursore:before {
+    transform: translateX(20px);
+}
+
+/* Stile Elimina */
+#PaginaPlugin .btn-elimina {
+    background: transparent;
+    color: #ff5f5f;
+    border: 1px solid rgba(255, 95, 95, 0.3);
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 11px;
+    transition: 0.2s;
+}
+
+#PaginaPlugin .btn-elimina:hover {
+    background: #ef4444;
+    color: white;
+    border-color: #ef4444;
 }
