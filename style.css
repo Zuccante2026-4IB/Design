@@ -502,10 +502,6 @@ body {
     margin-right: 8px;
 }
 
-#PaginaChat .btn-p-image{
-    
-}
-
 #PaginaChat nav span {
     font-size: 18px;
     color: #f5f5f5;
@@ -563,6 +559,9 @@ body {
     cursor: pointer;
     font-weight: 500;
     transition: 0.15s;
+    text-align: center;
+    color: #282828;
+    font-weight: 500;
 }
 
 #PaginaChat .chatarea {
@@ -946,4 +945,71 @@ body {
 
 #EventoSingolo .ev-footer button:hover {
     background: #5b2ac7;
+}
+
+#PaginaPlugin{
+    min-height: 100vh;
+    background: linear-gradient(160deg, rgba(10, 24, 42, 0.87) 0%, rgba(10, 24, 42, 0.72) 100%),
+        url('img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+#PaginaPlugin nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+#PaginaPlugin nav a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
+}
+
+#PaginaPlugin nav a:hover {
+    color: #733cf5;
+}
+
+#PaginaPlugin nav a:visited {
+    color: #f5f5f5;
+}
+
+#PaginaPlugin nav .OtherLinks {
+    display: flex;
+    gap: 16px;
+}
+
+#PaginaPlugin nav .dot {
+    height: 10px;
+    width: 10px;
+    background-color: #733cf5;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+#PaginaPlugin nav span {
+    font-size: 18px;
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+#PaginaPlugin .navText {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#PaginaPlugin .login {
+    background: #733cf5;
+    color: #ffffff;
+    border-radius: 99px;
+    padding: 6px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.15s;
 }
