@@ -30,7 +30,7 @@ body {
 #HomePage {
     min-height: 100vh;
     background: linear-gradient(160deg, rgba(10, 24, 42, 0.87) 0%, rgba(10, 24, 42, 0.72) 100%),
-        url('img/background.jpg');
+        url('assets/background.jpg');
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -92,6 +92,10 @@ body {
     background: #5b2ac7;
 }
 
+#HomePage .btn-primary:active {
+    background: #4a1e8c;
+}
+
 #HomePage .btn-secondary {
     background: transparent;
     color: #f5f5f5;
@@ -104,6 +108,10 @@ body {
 
 #HomePage .btn-secondary:hover {
     background: rgba(255, 255, 255, 0.12);
+}
+
+#HomePage .btn-secondary:active {
+    background: rgba(255, 255, 255, 0.2);
 }
 
 #HomePage .titlearea {
@@ -200,7 +208,7 @@ body {
 #PaginaEventi {
     min-height: 100vh;
     background: linear-gradient(160deg, rgba(10, 24, 42, 0.87) 0%, rgba(10, 24, 42, 0.72) 100%),
-        url('img/background.jpg');
+        url('assets/background.jpg');
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -459,7 +467,7 @@ body {
 #PaginaChat {
     min-height: 100vh;
     background: linear-gradient(160deg, rgba(10, 24, 42, 0.87) 0%, rgba(10, 24, 42, 0.72) 100%),
-        url('img/background.jpg');
+        url('assets/background.jpg');
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -548,6 +556,9 @@ body {
 }
 
 #PaginaChat .inputarea button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 12px;
     width: 12px;
     background: #733cf5;
@@ -564,6 +575,10 @@ body {
     font-weight: 500;
 }
 
+#PaginaChat .inputarea button:hover{
+    background-color: #5b2ac7;
+}
+
 #PaginaChat .chatarea {
     padding: 16px 20px;
     display: flex;
@@ -575,7 +590,6 @@ body {
     height: 80vh;
     max-width: 800px;
     margin: 0 auto;
-    margin-bottom: 20px;
     overflow-y: auto;
 }
 
@@ -623,10 +637,19 @@ body {
     border-radius: 50%;
 }
 
+#PaginaChat .btn-p-image {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+
+/*Fine pagina Chat*/
+
+/*Inizio pagina login*/
 #PaginaLogin {
     min-height: 100vh;
     background: linear-gradient(160deg, rgba(10, 24, 42, 0.87) 0%, rgba(10, 24, 42, 0.72) 100%),
-        url('img/background.jpg');
+        url('assets/background.jpg');
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -770,7 +793,7 @@ body {
 #EventoSingolo {
     min-height: 100vh;
     background: linear-gradient(160deg, rgba(10, 24, 42, 0.87) 0%, rgba(10, 24, 42, 0.72) 100%),
-        url('img/background.jpg');
+        url('assets/background.jpg');
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -947,10 +970,14 @@ body {
     background: #5b2ac7;
 }
 
+/* Fine Pagina Singolo evento*/
+
+/* Inizio Pagina Plugin*/
+
 #PaginaPlugin{
     min-height: 100vh;
     background: linear-gradient(160deg, rgba(10, 24, 42, 0.87) 0%, rgba(10, 24, 42, 0.72) 100%),
-        url('img/background.jpg');
+        url('assets/background.jpg');
     background-size: cover;
     background-position: center;
     margin: 0;
